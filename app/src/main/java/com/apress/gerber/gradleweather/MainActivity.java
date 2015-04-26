@@ -43,7 +43,7 @@ public class MainActivity extends ListActivity implements Runnable{
     }
 
     private void onDataLoaded() {
-        ((TextView) findViewById(R.id.currentDayOfWeek)).setText(weekdays[Calendar.getInstance().get(Calendar.DAY_OF_WEEK)+1]);
+        ((TextView) findViewById(R.id.currentDayOfWeek)).setText(weekdays[Calendar.getInstance().get(Calendar.DAY_OF_WEEK)-1]);
         ((TextView) findViewById(R.id.currentTemperature)).setText(temperatureData.getCurrentConditions().get(TemperatureData.CURRENT));
         ((TextView) findViewById(R.id.currentDewPoint)).setText(temperatureData.getCurrentConditions().get(TemperatureData.DEW_POINT));
         ((TextView) findViewById(R.id.currentHigh)).setText(temperatureData.getCurrentConditions().get(TemperatureData.HIGH));
