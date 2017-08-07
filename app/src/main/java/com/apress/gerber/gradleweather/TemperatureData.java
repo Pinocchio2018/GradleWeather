@@ -18,7 +18,7 @@ public class TemperatureData {
     public static final String LOW = "minimum";
     public static final String HIGH = "maximum";
     public static final String DEW_POINT = "dew point";
-    private final Context context;
+    //private final Context context;
 
     public TemperatureData(Context context) {
         this.context = context;
